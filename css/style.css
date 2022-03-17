@@ -12,3 +12,7 @@
   height: 100%;
   margin: 0 0.5rem;
 }
+
+.main {
+  flex: 1;
+}
