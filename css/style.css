@@ -18,3 +18,9 @@
 .main {
   flex: 1;
 }
+
+.main,
+.header,
+.footer {
+  margin: 0 auto;
+}
