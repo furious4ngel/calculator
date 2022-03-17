@@ -24,3 +24,16 @@
 .footer {
   margin: 0 auto;
 }
+
+.header,
+.footer {
+  max-width: 60ch;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5;
+}
+
+.title,
+.subtitle,
+.footer-text {
+  margin: 0;
+}
