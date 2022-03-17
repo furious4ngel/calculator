@@ -38,3 +38,8 @@
 .footer-text {
   margin: 0;
 }
+
+.github-link {
+  text-decoration: none;
+  color:hsl(155, 60%, 10%);
+}
