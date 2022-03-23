@@ -79,6 +79,14 @@
   color: hsl(163, 20%, 80%);
 }
 
+.display.number {
+  display: flex;
+  align-items: flex-end;
+  height: 5rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 3rem;
+}
+
 .all-clear {
   grid-column: 1 / 4;
 }
