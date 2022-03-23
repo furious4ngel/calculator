@@ -63,6 +63,13 @@
   border-radius: 0.3rem;
 }
 
+.display.operator {
+  font-family: 'Bungee', monospace;
+  background-color: hsl(0, 0%, 0%);
+  border-radius: 0.2rem;
+  color: hsl(163, 20%, 80%);
+}
+
 .all-clear {
   grid-column: 1 / 4;
 }
