@@ -47,6 +47,14 @@
   border-radius: 0.6rem;
 }
 
+.display-and-buttons-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0.5rem;
+  height: 100%;
+}
+
 .github-link {
   text-decoration: none;
   color: hsl(155, 60%, 10%);
