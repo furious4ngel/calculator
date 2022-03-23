@@ -63,6 +63,11 @@
   grid-column: 1 / 4;
 }
 
+.plus {
+  grid-column: 4;
+  grid-row: 5 / 7;
+}
+
 .zero {
   grid-column: 1 / 3;
 }
