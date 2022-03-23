@@ -39,65 +39,6 @@
   margin: 0;
 }
 
-.calculator {
-  min-height: 33rem;
-  padding: 1rem;
-  max-width: 25rem;
-  border: 0.3rem solid hsl(0, 0%, 0%);
-  border-radius: 1rem;
-}
-
-.display-and-buttons-container {
-  display: flex;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  gap: 1rem;
-  height: 100%;
-}
-
-.display-container {
-  display: flex;
-  flex-direction: column;
-  height: 5rem;
-  width: 100%;
-}
-
-.display {
-  margin: 0;
-}
-
-.display.operator {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex: 1;
-  font-family: 'Bungee', monospace;
-}
-
-.display.number {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex: 3;
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 2.75rem;
-}
-
-.button {
-  height: 4rem;
-}
-
-.button.number:not(.button.number.zero),
-.button.operator,
-.button.equal {
-  flex: 1 0 20%;
-}
-
-.button.all-clear,
-.button.number.zero {
-  flex: 3 0 70%;
-}
-
 .github-link {
   text-decoration: none;
   color: hsl(155, 60%, 10%);
