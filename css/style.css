@@ -55,6 +55,10 @@
   height: 100%;
 }
 
+.display-container {
+  grid-column: 1 / 5;
+}
+
 .github-link {
   text-decoration: none;
   color: hsl(155, 60%, 10%);
