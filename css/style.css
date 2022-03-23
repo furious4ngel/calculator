@@ -39,6 +39,14 @@
   margin: 0;
 }
 
+.calculator {
+  height: 30rem;
+  padding: 1rem;
+  max-width: 24rem;
+  border: 0.2rem solid hsl(0, 0%, 0%);
+  border-radius: 0.6rem;
+}
+
 .github-link {
   text-decoration: none;
   color: hsl(155, 60%, 10%);
