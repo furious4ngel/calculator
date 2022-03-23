@@ -63,6 +63,10 @@
   border-radius: 0.3rem;
 }
 
+.display {
+  margin: 0;
+}
+
 .display.operator {
   font-family: 'Bungee', monospace;
   background-color: hsl(0, 0%, 0%);
