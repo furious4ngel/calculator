@@ -91,9 +91,17 @@
 .button {
   font-family: 'Nunito', monospace;
   font-size: 1.5rem;
-  border: 0.1rem solid hsl(0, 0%, 0%);
+  border: 0.1rem solid hsl(0, 0%, 100%);
   box-shadow: 0 0.25rem 0 0 hsl(0, 0%, 0%);
   transition: transform 75ms, box-shadow 75ms;
+}
+
+.button.number {
+  background-color: hsl(240, 5%, 40%);
+}
+
+.button.operator {
+  background-color: hsl(243, 10%, 65%);
 }
 
 .button:not(.zero, .plus, .slash, .all-clear) {
@@ -118,6 +126,19 @@
 .all-clear {
   grid-column: 1 / 4;
   border-radius: 0.6rem 0.3rem 0.3rem 0.3rem;
+  background-color: hsl(330, 25%, 65%);
+}
+
+.button.number:hover {
+  background-color: hsl(240, 5%, 50%);
+}
+
+.button.operator:hover {
+  background-color: hsl(243, 10%, 75%);
+}
+
+.all-clear:hover {
+  background-color: hsl(330, 25%, 75%);
 }
 
 .button:active {
