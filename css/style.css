@@ -73,15 +73,9 @@
 }
 
 .display.operator {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 1rem;
-  width: 1rem;
   font-family: 'Bungee', monospace;
-  background-color: hsl(0, 0%, 0%);
-  border-radius: 0.2rem;
-  color: hsl(163, 20%, 80%);
+  color: hsl(0, 0%, 0%);
 }
 
 .display.number {
