@@ -42,7 +42,7 @@
 .calculator {
   height: 35rem;
   padding: 1rem;
-  background-color: hsl(0, 0%, 0%);
+  background-color: hsl(202, 50%, 75%);
   border: 0.2rem solid hsl(0, 0%, 0%);
   border-radius: 0.6rem;
 }
