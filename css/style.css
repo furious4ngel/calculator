@@ -96,21 +96,21 @@
   transition: transform 75ms, box-shadow 75ms;
 }
 
-.button.number {
-  background-color: hsl(240, 5%, 40%);
-}
-
-.button.operator {
-  background-color: hsl(243, 10%, 65%);
-}
-
 .button:not(.zero, .plus, .slash, .all-clear) {
   border-radius: 0.3rem;
+}
+
+.button.number {
+  background-color: hsl(240, 5%, 40%);
 }
 
 .zero {
   grid-column: 1 / 3;
   border-radius: 0.3rem 0.3rem 0.3rem 0.6rem;
+}
+
+.button.operator {
+  background-color: hsl(243, 10%, 65%);
 }
 
 .plus {
@@ -129,6 +129,11 @@
   background-color: hsl(330, 25%, 65%);
 }
 
+.button:active {
+  box-shadow: none;
+  transform: translateY(0.2rem);
+}
+
 .button.number:hover {
   background-color: hsl(240, 5%, 50%);
 }
@@ -139,11 +144,6 @@
 
 .all-clear:hover {
   background-color: hsl(330, 25%, 75%);
-}
-
-.button:active {
-  box-shadow: none;
-  transform: translateY(0.2rem);
 }
 
 .github-link {
