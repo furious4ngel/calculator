@@ -7,12 +7,8 @@
 }
 
 .body {
-  display: flex;
-  flex-direction: column;
   gap: 2rem;
   min-height: 100%;
-  margin: 0;
-  padding: 1rem;
   background-color: hsl(161, 20%, 60%);
 }
 
@@ -21,33 +17,69 @@
 }
 
 /* Related Styles */
+.body,
+.display-container,
+.display.number {
+  display: flex;
+}
+
+.display-container,
+.display.number {
+  align-items: flex-end;
+}
+
+.body,
+.display-container {
+  flex-direction: column;
+}
+
+.body,
+.title,
+.subtitle,
+.display,
+.footer-text {
+  margin: 0;
+}
+
 .main,
 .header,
 .footer {
   margin: 0 auto;
 }
 
+.body,
+.calculator {
+  padding: 1rem;
+}
+
+.header,
+.button,
+.footer {
+  font-family: 'Nunito', sans-serif;
+}
+
+.display-container,
+.button:not(.zero, .plus, .slash, .all-clear) {
+  border-radius: 0.3rem;
+}
+
+.calculator,
+.button {
+  box-shadow: 0 0.25rem 0 0 hsl(0, 0%, 0%);
+}
+
 .header,
 .footer {
   max-width: 60ch;
-  font-family: 'Nunito', sans-serif;
   line-height: 1.5;
-}
-
-.title,
-.subtitle,
-.footer-text {
-  margin: 0;
 }
 
 /* Calculator */
 .calculator {
   height: 35rem;
-  padding: 1rem;
   background-color: hsl(161, 20%, 50%);
   border: 0.2rem solid hsl(0, 0%, 0%);
   border-radius: 0.6rem;
-  box-shadow: 0 0.25rem 0 0 hsl(0, 0%, 0%);
 }
 
 /* Display */
@@ -60,20 +92,12 @@
 }
 
 .display-container {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
   grid-column: 1 / 5;
   margin: 2rem 0 1rem;
   padding: 0.5rem 0.5rem 0;
   background-color: hsl(163, 20%, 80%);
   border: 0.1rem solid hsl(0, 0%, 0%);
-  border-radius: 0.3rem;
   box-shadow: inset 0 0.25rem 0 0 hsl(0, 0%, 0%);
-}
-
-.display {
-  margin: 0;
 }
 
 .display.operator {
@@ -83,8 +107,6 @@
 }
 
 .display.number {
-  display: flex;
-  align-items: flex-end;
   min-height: 4rem;
   font-family: 'Share Tech Mono', monospace;
   font-size: 3rem;
@@ -93,15 +115,9 @@
 
 /* Buttons */
 .button {
-  font-family: 'Nunito', monospace;
   font-size: 1.5rem;
   border: 0.1rem solid hsl(0, 0%, 100%);
-  box-shadow: 0 0.25rem 0 0 hsl(0, 0%, 0%);
   transition: transform 75ms, box-shadow 75ms;
-}
-
-.button:not(.zero, .plus, .slash, .all-clear) {
-  border-radius: 0.3rem;
 }
 
 .button.number {
