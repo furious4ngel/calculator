@@ -110,7 +110,7 @@
 }
 
 .button.operator {
-  background-color: hsl(243, 10%, 65%);
+  background-color: hsl(243, 10%, 75%);
 }
 
 .plus {
@@ -139,7 +139,7 @@
 }
 
 .button.operator:hover {
-  background-color: hsl(243, 10%, 75%);
+  background-color: hsl(243, 10%, 85%);
 }
 
 .all-clear:hover {
