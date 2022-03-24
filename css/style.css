@@ -20,6 +20,7 @@
   flex: 1;
 }
 
+/* Related Styles */
 .main,
 .header,
 .footer {
@@ -39,6 +40,7 @@
   margin: 0;
 }
 
+/* Calculator */
 .calculator {
   height: 35rem;
   padding: 1rem;
@@ -48,6 +50,7 @@
   box-shadow: 0 0.25rem 0 0 hsl(0, 0%, 0%);
 }
 
+/* Display */
 .display-and-buttons-container {
   display: grid;
   grid-template-columns: repeat(4, minmax(1rem, 5rem));
@@ -88,6 +91,7 @@
   word-break: break-all;
 }
 
+/* Buttons */
 .button {
   font-family: 'Nunito', monospace;
   font-size: 1.5rem;
@@ -147,6 +151,7 @@
   background-color: hsl(330, 25%, 75%);
 }
 
+/* Footer */
 .github-link {
   text-decoration: none;
   color: hsl(155, 60%, 10%);
