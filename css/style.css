@@ -97,7 +97,7 @@
   border: 0.1rem solid hsl(0, 0%, 0%);
   border-radius: 0.2rem;
   box-shadow: 0 0.25rem 0 0 hsl(0, 0%, 0%);
-  transition: transform 75ms;
+  transition: transform 75ms, box-shadow 75ms;
 }
 
 .all-clear {
