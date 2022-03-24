@@ -87,9 +87,10 @@
 .display.number {
   display: flex;
   align-items: flex-end;
-  height: 5rem;
+  min-height: 4rem;
   font-family: 'Share Tech Mono', monospace;
   font-size: 3rem;
+  word-break: break-all;
 }
 
 .button {
