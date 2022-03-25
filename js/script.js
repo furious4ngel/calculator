@@ -1,23 +1,22 @@
-function add(a, b) {
-  let result = Number(a) + Number(b);
-  let rounded = Number(result.toFixed(3));
+function formatResult(value) {
+  let rounded = Number(value.toFixed(3));
 
-  if (result >= 1000000) {
-    result = result.toExponential(2);
-  } else if (result !== rounded) {
-    result = rounded;
+  if (value >= 1000000) {
+    value = value.toExponential(2);
+  } else if (value !== rounded) {
+    value = rounded;
   }
-  return result;
+  return value;
+}
+
+function add(a, b) {
+  return formatResult(Number(a) + Number(b));
 }
 
 function subtract(a, b) {
-  let result = a - b;
-  let rounded = Number(result.toFixed(3));
-  
-  if (result >= 1000000) {
-    result = result.toExponential(2);
-  } else if (result !== rounded) {
-    result = rounded;
-  }
-  return result;
+  return formatResult(a - b);
+}
+
+function multiply(a, b) {
+  return formatResult(a * b);
 }
