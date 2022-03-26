@@ -76,7 +76,7 @@
 
 /* Calculator */
 .calculator {
-  height: 35rem;
+  min-height: 35rem;
   background-color: hsl(161, 20%, 50%);
   border: 0.2rem solid hsl(0, 0%, 0%);
   border-radius: 0.6rem;
@@ -86,7 +86,7 @@
 .display-and-buttons-container {
   display: grid;
   grid-template-columns: repeat(4, minmax(1rem, 5rem));
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(6, minmax(4.25rem, auto));
   gap: 0.5rem;
   height: 100%;
 }
