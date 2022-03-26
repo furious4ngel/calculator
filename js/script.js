@@ -1,5 +1,5 @@
 function formatResult(result) {
-  const MILLION = 1000000;
+  const MILLION = 1e6;
   let decimal = Number(result.toFixed(3));
   let exponent = result.toExponential(2);
 
