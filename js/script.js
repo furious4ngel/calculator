@@ -1,10 +1,12 @@
 function formatResult(result) {
-  let rounded = Number(result.toFixed(3));
+  const MILLION = 1000000;
+  let decimal = Number(result.toFixed(3));
+  let exponent = result.toExponential(2);
 
-  if (result >= 1000000) {
-    result = result.toExponential(2);
-  } else if (result !== rounded) {
-    result = rounded;
+  if (result >= MILLION) {
+    result = exponent;
+  } else if (result !== decimal) {
+    result = decimal;
   }
   return result;
 }
