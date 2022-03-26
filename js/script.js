@@ -22,3 +22,8 @@ function subtract(a, b) {
 function multiply(a, b) {
   return formatResult(a * b);
 }
+
+function divide(a, b) {
+  const ERROR = 'ERR: DIVIDE BY 0';
+  return (b === '0') ? ERROR : formatResult(a / b);
+}
