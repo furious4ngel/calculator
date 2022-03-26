@@ -1,12 +1,12 @@
-function formatResult(value) {
-  let rounded = Number(value.toFixed(3));
+function formatResult(result) {
+  let rounded = Number(result.toFixed(3));
 
-  if (value >= 1000000) {
-    value = value.toExponential(2);
-  } else if (value !== rounded) {
-    value = rounded;
+  if (result >= 1000000) {
+    result = result.toExponential(2);
+  } else if (result !== rounded) {
+    result = rounded;
   }
-  return value;
+  return result;
 }
 
 function add(a, b) {
