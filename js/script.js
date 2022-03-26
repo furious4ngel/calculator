@@ -1,9 +1,10 @@
 function formatResult(result) {
+  const THOUSANDTH = 1e-3;
   const MILLION = 1e6;
   let decimal = Number(result.toFixed(3));
   let exponent = result.toExponential(2);
 
-  if (result >= MILLION) {
+  if (result <= THOUSANDTH || result >= MILLION) {
     result = exponent;
   } else if (result !== decimal) {
     result = decimal;
