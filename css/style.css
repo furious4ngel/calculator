@@ -76,7 +76,6 @@
 
 /* Calculator */
 .calculator {
-  min-height: 35rem;
   background-color: hsl(161, 20%, 50%);
   border: 0.2rem solid hsl(0, 0%, 0%);
   border-radius: 0.6rem;
