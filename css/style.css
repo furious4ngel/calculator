@@ -88,7 +88,6 @@
   grid-template-columns: repeat(4, minmax(1rem, 5rem));
   grid-template-rows: repeat(6, minmax(4.25rem, auto));
   gap: 0.5rem;
-  height: 100%;
 }
 
 .display-container {
