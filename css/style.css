@@ -107,8 +107,7 @@
 .display.number {
   min-height: 4rem;
   font-family: 'Share Tech Mono', monospace;
-  font-size: 3rem;
-  word-break: break-all;
+  font-size: 2.25rem;
 }
 
 /* Buttons */
