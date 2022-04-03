@@ -18,14 +18,8 @@
 
 /* Related Styles */
 .body,
-.display-container,
-.display.number {
+.display-container {
   display: flex;
-}
-
-.display-container,
-.display.number {
-  align-items: flex-end;
 }
 
 .body,
@@ -36,7 +30,7 @@
 .body,
 .title,
 .subtitle,
-.display,
+.display.number,
 .footer-text {
   margin: 0;
 }
@@ -90,6 +84,7 @@
 }
 
 .display-container {
+  gap: 1rem;
   grid-column: 1 / 5;
   margin: 2rem 0 1rem;
   padding: 0.5rem 0.5rem 0;
@@ -99,15 +94,18 @@
 }
 
 .display.operator {
+  margin: 0 0 0 auto;
   height: 1rem;
   font-family: 'Bungee', monospace;
   color: hsl(0, 0%, 0%);
 }
 
 .display.number {
-  min-height: 4rem;
+  min-height: 4.5rem;
+  direction: rtl;
   font-family: 'Share Tech Mono', monospace;
   font-size: 3rem;
+  overflow-x: auto;
 }
 
 /* Buttons */
