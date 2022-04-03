@@ -11,8 +11,8 @@ function multiply(a, b) {
 }
 
 function divide(a, b) {
-  const ERROR = 'ERR: DIVIDE BY 0';
-  return (b === '0') ? ERROR : a / b;
+  const ERROR = 'NONSENSE';
+  return (b === 0) ? ERROR : a / b;
 }
 
 function operate(operator, a, b) {
