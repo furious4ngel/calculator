@@ -1,5 +1,5 @@
 function add(a, b) {
-  return Number(a) + Number(b);
+  return a + b;
 }
 
 function subtract(a, b) {
@@ -16,7 +16,10 @@ function divide(a, b) {
 }
 
 function operate(operator, a, b) {
+  a = Number(a);
+  b = Number(b);
   let result;
+  
   switch (operator) {
     case '+':
       result = add(a, b);
