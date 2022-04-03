@@ -17,24 +17,17 @@ function divide(a, b) {
 
 function operate(operator, a, b) {
   let result;
-  const operators = {
-      plus: '+',
-      minus: '-',
-      times: '×',
-      slash: '÷'
-  };
-
   switch (operator) {
-    case operators.plus:
+    case '+':
       result = add(a, b);
       break;
-    case operators.minus:
+    case '-':
       result = subtract(a, b);
       break;
-    case operators.times:
+    case '×':
       result = multiply(a, b);
       break;
-    case operators.slash:
+    case '÷':
       result = divide(a, b);
       break;
   }
