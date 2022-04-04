@@ -1,4 +1,5 @@
 const numberDisplay = document.querySelector('.display.number');
+const numberKeys = [...document.querySelectorAll('.button.number')];
 
 function main() {
   numberDisplay.textContent = '0';
