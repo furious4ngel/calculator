@@ -1,3 +1,5 @@
+const numberDisplay = document.querySelector('.display.number');
+
 function add(a, b) {
   return a + b;
 }
