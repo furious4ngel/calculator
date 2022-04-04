@@ -6,7 +6,9 @@ let pressedEqualKey = false;
 function main() {
   numberDisplay.textContent = '0';
 
-
+  numberKeys.forEach((numberKey) => {
+    numberKey.addEventListener('click', enterNumber);
+  });
 }
 
 function add(a, b) {
