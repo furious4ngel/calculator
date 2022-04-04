@@ -1,7 +1,7 @@
 const numberDisplay = document.querySelector('.display.number');
 
 function main() {
-  
+  numberDisplay.textContent = '0';
 }
 
 function add(a, b) {
