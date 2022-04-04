@@ -1,5 +1,9 @@
 const numberDisplay = document.querySelector('.display.number');
 
+function main() {
+  
+}
+
 function add(a, b) {
   return a + b;
 }
@@ -38,3 +42,5 @@ function operate(operator, a, b) {
   }
   return result;
 }
+
+main();
