@@ -74,4 +74,22 @@ function enterNumber(event) {
   numberDisplay.textContent += digit;
 }
 
+function enterOperator(event) {
+  pressedOperatorKey = true;
+  let result;
+  let operator = event.target.textContent;
+  let displayValue = numberDisplay.textContent;
+
+  if (operation[0]) {
+    operation[2] = displayValue;
+    result = operate(operation[1], operation[0], operation[2]);
+    operation[0] = result;
+    numberDisplay.textContent = result;
+  } else {
+    operation[0] = displayValue;
+  }
+  operation[1] = operator;
+  operatorDisplay.textContent = operator;
+}
+
 main();
