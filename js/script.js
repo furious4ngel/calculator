@@ -5,6 +5,8 @@ let pressedEqualKey = false;
 
 function main() {
   numberDisplay.textContent = '0';
+
+
 }
 
 function add(a, b) {
@@ -44,6 +46,27 @@ function operate(operator, a, b) {
       break;
   }
   return result;
+}
+
+function enterNumber(event) {
+  const results = ['0', 'NaN', 'Infinity', 'NONSENSE'];
+  let pressedKeys = pressedOperatorKey || pressedEqualKey;
+  let digit = event.target.textContent;
+  let displayValue = numberDisplay.textContent;
+
+  for (const result of results) {
+    if (result === displayValue) {
+      numberDisplay.textContent = '';
+    }
+  }
+
+  if (pressedKeys) {
+    pressedOperatorKey = false;
+    pressedEqualKey = false;
+    numberDisplay.textContent = '';
+  }
+
+  numberDisplay.textContent += digit;
 }
 
 main();
