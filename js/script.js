@@ -1,5 +1,6 @@
 const numberDisplay = document.querySelector('.display.number');
 const numberKeys = [...document.querySelectorAll('.button.number')];
+const operatorDisplay = document.querySelector('.display.operator');
 const operatorKeys = [...document.querySelectorAll('.button.operator:not(.equal)')];
 const operation = [];
 let pressedOperatorKey = false;
