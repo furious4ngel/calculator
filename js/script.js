@@ -12,6 +12,9 @@ function main() {
   numberKeys.forEach((numberKey) => {
     numberKey.addEventListener('click', enterNumber);
   });
+  operatorKeys.forEach((operatorKey) => {
+    operatorKey.addEventListener('click', enterOperator);
+  });
 }
 
 function add(a, b) {
