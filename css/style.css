@@ -102,7 +102,6 @@
 
 .display.number {
   min-height: 4.5rem;
-  direction: rtl;
   font-family: 'Share Tech Mono', monospace;
   font-size: 3rem;
   overflow-x: auto;
