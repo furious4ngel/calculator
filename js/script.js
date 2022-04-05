@@ -35,8 +35,9 @@ function divide(a, b) {
   let result;
 
   if (b === 0) {
-    alert('Error: Divide by 0');
-    result = operation[0];
+    alert('ERROR: Divide by Zero');
+    operatorDisplay.textContent = '';
+    result = '0';
   } else {
     result = a / b;
   }
