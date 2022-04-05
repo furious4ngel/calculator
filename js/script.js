@@ -67,23 +67,15 @@ function operate(operator, a, b) {
 }
 
 function enterNumber(event) {
-  const results = ['0', 'NaN', 'Infinity'];
   let displayValue = numberDisplay.textContent;
   let pressedKeys = pressedOperatorKey || pressedEqualKey;
   let digit = event.target.textContent;
 
-  for (const result of results) {
-    if (result === displayValue) {
-      numberDisplay.textContent = '';
-    }
-  }
-
-  if (pressedKeys) {
+  if (pressedKeys || displayValue === '0') {
     pressedOperatorKey = false;
     pressedEqualKey = false;
     numberDisplay.textContent = '';
   }
-
   numberDisplay.textContent += digit;
 }
 
