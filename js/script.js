@@ -103,4 +103,15 @@ function enterOperator(event) {
   operatorDisplay.textContent = operator;
 }
 
+function calculate() {
+  pressedEqualKey = true;
+  operation[2] = numberDisplay.textContent;
+
+  if (operation[0]) {
+    operatorDisplay.textContent = '';
+    numberDisplay.textContent = operate(operation[1], operation[0], operation[2]);
+    operation[0] = null;
+  }
+}
+
 main();
