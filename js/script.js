@@ -16,6 +16,7 @@ function main() {
   operatorKeys.forEach((operatorKey) => {
     operatorKey.addEventListener('click', enterOperator);
   });
+  equalKey.addEventListener('click', calculate);
 }
 
 function add(a, b) {
