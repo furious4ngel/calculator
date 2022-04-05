@@ -3,6 +3,7 @@ const numberKeys = [...document.querySelectorAll('.button.number')];
 const operatorDisplay = document.querySelector('.display.operator');
 const operatorKeys = [...document.querySelectorAll('.button.operator:not(.equal)')];
 const equalKey = document.querySelector('.equal');
+const allClearKey = document.querySelector('.all-clear');
 const operation = [];
 let pressedOperatorKey = false;
 let pressedEqualKey = false;
