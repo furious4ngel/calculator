@@ -94,7 +94,7 @@
 }
 
 .display.operator {
-  margin: 0 0 0 auto;
+  margin: 0;
   height: 1rem;
   font-family: 'Bungee', monospace;
   color: hsl(0, 0%, 0%);
