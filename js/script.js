@@ -85,7 +85,7 @@ function enterOperator(event) {
   let displayValue = numberDisplay.textContent;
   let operator = event.target.textContent;
 
-  if (operation.length > 1) {
+  if (operation[0]) {
     operation[2] = displayValue;
     result = operate(operation[1], operation[0], operation[2]);
     operation[0] = result;
