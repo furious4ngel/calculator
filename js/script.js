@@ -109,4 +109,12 @@ function calculate() {
   }
 }
 
+function clearAll() {
+  while (operation.length) {
+    operation.pop();
+  }
+  operatorDisplay.textContent = '';
+  numberDisplay.textContent = '0';
+}
+
 main();
