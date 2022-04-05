@@ -165,10 +165,5 @@
 
 /* Footer */
 .github-link {
-  text-decoration: none;
   color: hsl(155, 60%, 10%);
-}
-
-.github-link:hover {
-  text-decoration: underline;
 }
