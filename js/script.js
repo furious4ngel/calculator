@@ -30,15 +30,22 @@ function multiply(a, b) {
 }
 
 function divide(a, b) {
-  const ERROR = 'NONSENSE';
-  return (b === 0) ? ERROR : a / b;
+  let result;
+
+  if (b === 0) {
+    alert('Error: Divide by 0');
+    result = operation[0];
+  } else {
+    result = a / b;
+  }
+  return result;
 }
 
 function operate(operator, a, b) {
   a = Number(a);
   b = Number(b);
   let result;
-  
+
   switch (operator) {
     case '+':
       result = add(a, b);
@@ -57,10 +64,10 @@ function operate(operator, a, b) {
 }
 
 function enterNumber(event) {
-  const results = ['0', 'NaN', 'Infinity', 'NONSENSE'];
+  const results = ['0', 'NaN', 'Infinity'];
+  let displayValue = numberDisplay.textContent;
   let pressedKeys = pressedOperatorKey || pressedEqualKey;
   let digit = event.target.textContent;
-  let displayValue = numberDisplay.textContent;
 
   for (const result of results) {
     if (result === displayValue) {
@@ -80,10 +87,10 @@ function enterNumber(event) {
 function enterOperator(event) {
   pressedOperatorKey = true;
   let result;
-  let operator = event.target.textContent;
   let displayValue = numberDisplay.textContent;
+  let operator = event.target.textContent;
 
-  if (operation[0]) {
+  if (operation.length > 1) {
     operation[2] = displayValue;
     result = operate(operation[1], operation[0], operation[2]);
     operation[0] = result;
