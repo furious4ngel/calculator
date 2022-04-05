@@ -50,7 +50,7 @@ function operate(operator, a, b) {
     case '+':
       result = add(a, b);
       break;
-    case '-':
+    case '–':
       result = subtract(a, b);
       break;
     case '×':
