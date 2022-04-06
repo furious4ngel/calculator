@@ -116,6 +116,10 @@
   transition: transform 75ms, box-shadow 75ms;
 }
 
+.button:not(.number) {
+  color: hsl(0, 0%, 0%);
+}
+
 .button.number {
   background-color: hsl(240, 5%, 40%);
   color: hsl(0, 0%, 100%);
