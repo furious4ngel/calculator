@@ -19,6 +19,7 @@ function main() {
     operatorKey.addEventListener('click', enterOperator);
   });
   equalKey.addEventListener('click', calculate);
+  deleteKey.addEventListener('click', backspace);
   allClearKey.addEventListener('click', clearAll);
 }
 
