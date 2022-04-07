@@ -3,7 +3,7 @@ const numberKeys = [...document.querySelectorAll('.button.number')];
 const operatorDisplay = document.querySelector('.display.operator');
 const operatorKeys = [...document.querySelectorAll('.button.operator:not(.equal)')];
 const equalKey = document.querySelector('.equal');
-const allClearKey = document.querySelector('.clear');
+const clearKey = document.querySelector('.clear');
 const deleteKey = document.querySelector('.delete');
 const operation = [];
 let pressedOperatorKey = false;
@@ -20,7 +20,7 @@ function main() {
   });
   equalKey.addEventListener('click', calculate);
   deleteKey.addEventListener('click', backspace);
-  allClearKey.addEventListener('click', clearAll);
+  clearKey.addEventListener('click', clearAll);
 }
 
 function add(a, b) {
