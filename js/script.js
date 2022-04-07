@@ -111,6 +111,16 @@ function calculate() {
   }
 }
 
+function backspace() {
+  const value = [...numberDisplay.textContent];
+  value.pop();
+  numberDisplay.textContent = value.join('');
+
+  if (!numberDisplay.textContent) {
+    numberDisplay.textContent = '0';
+  }
+}
+
 function clearAll() {
   while (operation.length) {
     operation.pop();
