@@ -18,7 +18,8 @@
 
 /* Related Styles */
 .body,
-.display-container {
+.display-container,
+.display.operator {
   display: flex;
 }
 
@@ -95,6 +96,7 @@
 }
 
 .display.operator {
+  align-items: center;
   margin: 0;
   height: 1rem;
   font-family: 'Bungee', monospace;
