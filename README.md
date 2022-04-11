@@ -5,7 +5,7 @@ This project is part of The Odin Project curriculum.
 
 ## What I Learned
 ### HTML
-I don't absolutely need IDs to target elements in JavsScript.
+I don't need IDs to target elements in JavaScript.
 Classes can be used to target them too.
 
 ### CSS
