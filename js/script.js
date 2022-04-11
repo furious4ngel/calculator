@@ -102,6 +102,18 @@ function enterOperator(event) {
   operatorDisplay.textContent = operator;
 }
 
+function enterDecimal(event) {
+  let decimal = event.target.textContent;
+  let displayValue = [...numberDisplay.textContent];
+
+  for (const digit of displayValue) {
+    if (digit === '.') {
+      return;
+    }
+  }
+  numberDisplay.textContent += decimal;
+}
+
 function calculate() {
   pressedEqualKey = true;
   operation[2] = numberDisplay.textContent;
