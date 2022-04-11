@@ -82,6 +82,10 @@ function enterNumber(event) {
     pressedEqualKey = false;
     numberDisplay.textContent = '';
   }
+
+  if (displayValue === '0.') {
+    numberDisplay.textContent = displayValue;
+  }
   numberDisplay.textContent += digit;
 }
 
