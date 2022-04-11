@@ -19,6 +19,7 @@ function main() {
   operatorKeys.forEach((operatorKey) => {
     operatorKey.addEventListener('click', enterOperator);
   });
+  decimalKey.addEventListener('click', enterDecimal);
   equalKey.addEventListener('click', calculate);
   deleteKey.addEventListener('click', backspace);
   clearKey.addEventListener('click', clearAll);
